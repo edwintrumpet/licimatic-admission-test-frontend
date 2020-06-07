@@ -4,8 +4,9 @@
   "description": "GovMatic App, this web app shows us the information of the Grants platform with superpowers.",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.prod.js",
-    "start": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.config.js",
+    "dev": "webpack-dev-server --config webpack.dev.js",
+    "start": "webpack --config webpack.prod.js",
     "lint": "eslint ./src/",
     "lint:fix": "eslint ./src/ --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
