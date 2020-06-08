@@ -5,7 +5,6 @@ import NotifiacionsIcon from '../assets/icons/Notifications';
 
 function Navigation() {
   const handleClick = () => {
-    console.log('Hola');
   };
 
   return (
