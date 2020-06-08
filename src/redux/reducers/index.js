@@ -1,14 +1,21 @@
+import { types } from '../actions';
+
 const reducer = (state, action) => {
   switch (action.type) {
-    case 'CHANGE_TEXT':
+    case types.INSTANCE_SOCKET:
       return {
         ...state,
-        text: action.payload,
+        instanceSocket: action.payload,
       };
-    case 'SET_ERROR':
+    case types.END_SCRAPING:
       return {
         ...state,
-        error: action.payload,
+        scraping: false,
+      };
+    case types.START_SCRAPING:
+      return {
+        ...state,
+        scraping: true,
       };
     default:
       return state;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export default styled.svg`
-  fill: #8f8f8f;
+  fill: ${(props) => (props.scraping ? '#8f8f8f' : 'yellowgreen')};
   width: 50%;
   height: 100%;
   @media (min-width: 415px) {
