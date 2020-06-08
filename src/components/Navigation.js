@@ -9,9 +9,7 @@ import { startScraping } from '../redux/actions';
 function Navigation(props) {
   const { scraping } = props;
   const handleClick = async () => {
-    const response = await fetch(`${constants.API}/scraping`);
-    const data = await response.json();
-    console.log(data);
+    await fetch(`${constants.API}/scraping`);
     props.startScraping();
   };
 

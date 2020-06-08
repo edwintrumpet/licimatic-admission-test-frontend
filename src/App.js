@@ -11,8 +11,7 @@ const socket = io(constants.API);
 
 function App(props) {
   useEffect(() => {
-    socket.on('scraped', (data) => {
-      console.log(data);
+    socket.on('scraped', () => {
       props.endScraping();
     });
   }, []);
