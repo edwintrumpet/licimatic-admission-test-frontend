@@ -1,17 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container } from '../styles/components/Navigation';
 import RefreshIcon from '../assets/icons/Refresh';
 import NotifiacionsIcon from '../assets/icons/Notifications';
 
-export default function Navigation() {
-  const [refresh, setRefresh] = useState(false);
+function Navigation() {
   const handleClick = () => {
-    setRefresh(!refresh);
+    console.log('Hola');
   };
+
   return (
     <Container>
-      <RefreshIcon refresh={refresh} onClick={handleClick} />
+      <RefreshIcon onClick={handleClick} />
       <NotifiacionsIcon />
     </Container>
   );
 }
+
+export default Navigation;
