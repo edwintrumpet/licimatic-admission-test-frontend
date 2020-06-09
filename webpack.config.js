@@ -6,6 +6,9 @@ module.exports = {
     modules: [
       'react',
       'react-dom',
+      'react-redux',
+      'redux',
+      'styled-components',
     ],
   },
   output: {
