@@ -1,3 +1,3 @@
 export default {
-  API: 'http://localhost:8000',
+  API: 'https://govmatic-api-dev.herokuapp.com',
 };
